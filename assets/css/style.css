@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url(../images/tiny-squares.png);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+h2 {
+    background-color: #4aaaaf; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; 
+}
+
+.header h2 {
+    padding: 0;
+    margin-left: 25%;  
+    display: inline; 
+    margin-right: 35%;
+}
+
+/* header style */
+
+.header {
+    border: 1px solid #cccccc; 
+    width: 100%;
+    background-color: #ffffff; 
+    
+}
+
+.blank {
+    width: 25%; 
+    float: left; 
+    margin: 0; 
+}
+
+.name {
+    width: 50%; 
+    margin: 0; 
+}
+
+.links {
+     
+    width: 25%; 
+    float: right; 
+}
+
+    
+/* portfolio styles */
+
+.proj-column {
+    width: 45%; 
+    float: left; 
+}
+
+.column {
+   
+    padding: 0; 
+    height: 75px; 
+    
+
+}
+
+.row {
+    width: 100%; 
+    margin: 0 auto; 
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.portfolio img {
+width: 100%;
+padding: 10px; 
+}
+
+.portfolio {
+    width: 50%; 
+    margin: 20px auto; 
+    float: center; 
+    
+}
+
+.proj-box {
+position: relative; 
+}
+
+.proj-text { 
+    position: absolute; 
+    bottom: 5%; 
+    right: 0%; 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+
+
