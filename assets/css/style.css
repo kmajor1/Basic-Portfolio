@@ -4,35 +4,59 @@
 }
 
 body {
-    background-image: url(../images/tiny-squares.png);
+    background-image: url(../images/gravel.png);
+    margin: 0; 
 }
 
 a {
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    text-align: right; 
+    color: black;
+    font-family: arial, Arial, Helvetica, sans-serif;
+    font-size: 1.5vw; 
 }
 
-h2 {
+h1, h2 {
     background-color: #4aaaaf; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 2px; 
+    padding-top: 2px; 
+    font-size: 2.5vw; 
 }
 
-.header h2 {
-    padding: 10px;
+nav h1, nav h2 {
+     
+    
     margin-left: 25%;  
-    display: inline; 
-    margin-right: 35%;
+    display: inline-block; 
+    margin-right: auto;
+    margin-bottom: 0; 
+    margin-top: 0; 
+    
 }
 
-/* header style */
+/* header styles */
 
-.header {
+nav {
     border: 1px solid #cccccc; 
     width: 100%;
     background-color: #ffffff; 
+    position: fixed; 
+    z-index: 10; 
     
 }
+
+nav::after { 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 
 .blank {
     width: 25%; 
@@ -86,8 +110,9 @@ padding: 10px;
 
 .portfolio {
     width: 50%; 
-    margin: 20px auto; 
-    float: center; 
+    margin: 5px auto; 
+    position: relative; 
+    top: 60px; 
     
 }
 
@@ -102,6 +127,15 @@ position: relative;
     width: 100%; 
     padding: 10px; 
     text-align: center; 
+}
+
+ul, li {
+    display: inline; 
+}
+
+ul { 
+    margin-left: 25%; 
+    
 }
 
 
