@@ -14,7 +14,15 @@ a {
     text-align: right; 
     color: black;
     font-family: arial, Arial, Helvetica, sans-serif;
-    font-size: 1.2vw; 
+    font-size: 1.3vw; 
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #ffffff; 
+    text-align: center; 
+    font-size: 2vw; 
+    padding: 5px; 
 }
 
 h1, h2 {
@@ -25,7 +33,25 @@ h1, h2 {
     padding-right: 5px; 
     padding-bottom: 2px; 
     padding-top: 2px; 
-    font-size: 2vw; 
+    font-size: 2.2vw; 
+}
+
+ul, li {
+    display: inline; 
+}
+
+ul { 
+    margin-left: 30%; 
+    
+}
+
+nav {
+    border: 1px solid #cccccc; 
+    width: 100%;
+    background-color: #ffffff; 
+    position: fixed; 
+    z-index: 10; 
+    
 }
 
 nav h1, nav h2 {
@@ -39,24 +65,11 @@ nav h1, nav h2 {
     
 }
 
-/* header styles */
-
-nav {
-    border: 1px solid #cccccc; 
-    width: 100%;
-    background-color: #ffffff; 
-    position: fixed; 
-    z-index: 10; 
-    
-}
-
 nav::after { 
     content: "";
     display: table;
     clear: both;
 }
-
-
 
 .blank {
     width: 25%; 
@@ -78,17 +91,25 @@ nav::after {
     
 /* portfolio styles */
 
+.portfolio::after {
+
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
 .proj-column {
     width: 45%; 
+    
+}
+
+.l {
     float: left; 
 }
 
-.column {
-   
-    padding: 0; 
-    height: 75px; 
-    
-
+.r {
+    float: right; 
 }
 
 .row {
@@ -103,18 +124,23 @@ nav::after {
     clear: both;
 }
 
-.portfolio img {
-width: 100%;
-padding: 10px; 
-}
+
 
 .portfolio {
     width: 50%; 
     margin: 0 auto; 
     position: relative; 
     top: 60px; 
+    border: 10px solid #dddddd; 
+    background-color: #ffffff; 
     
 }
+
+.portfolio img {
+    width: 100%;
+    padding: 10px; 
+    height: 200px; 
+    }
 
 .proj-box {
 position: relative; 
@@ -122,21 +148,23 @@ position: relative;
 
 .proj-text { 
     position: absolute; 
-    bottom: 5%; 
+    bottom: .01em; 
     right: 0%; 
     width: 100%; 
     padding: 10px; 
     text-align: center; 
 }
 
-ul, li {
-    display: inline; 
+footer {
+    width: 100%; 
+    background-color: #666;
+    position: relative; 
+    bottom: -100px; 
+    border-top: 3px solid #4aaaaf;
+
 }
 
-ul { 
-    margin-left: 25%; 
-    
-}
+
 
 
 
