@@ -23,7 +23,7 @@ input {
 
 body {
     background-image: url(../images/gravel.png);
-    margin: 0; 
+    margin: 1px; 
     height: 100%; 
 }
 
@@ -42,10 +42,15 @@ a:hover {
 
 p {
     font-family: Arial, Helvetica, sans-serif; 
-    color: #ffffff; 
+    color: #777777; 
     text-align: center; 
     font-size: 1.5vw; 
     padding: 5px; 
+}
+
+#biography {
+    text-align: left; 
+    margin-top: 20px; 
 }
 
 h1, h2 {
@@ -160,6 +165,7 @@ nav::after {
 .portfolio {
     width: 50%; 
     margin: 0 auto; 
+    margin-bottom: 100px; 
     position: relative; 
     top: 60px; 
     border: 10px solid #dddddd; 
@@ -174,6 +180,13 @@ nav::after {
     top: 60px; 
     border: 10px solid #dddddd; 
     background-color: #ffffff; 
+}
+
+.contact::after {
+    display: table; 
+    content: ""; 
+    clear: both; 
+     
 }
 
 #contactbody {
@@ -199,14 +212,31 @@ position: relative;
     text-align: center; 
 }
 
+/* about me styles */ 
+#headshot {
+    
+    margin: 2px; 
+    padding: 2px; 
+    float: left; 
+    border: 1px solid #dddddd;
+    height: 200px; 
+    
+     
+}
+
 footer {
     width: 100%; 
     background-color: #666;
-    position: absolute; 
+    position: fixed; 
     bottom: 0px; 
     border-top: 3px solid #4aaaaf;
     font-size: 2vw; 
+    margin-top:30px; 
 
+}
+
+footer p {
+    color: #ffffff; 
 }
 
 
